@@ -12,17 +12,17 @@ in an appended CSV file.
 Instructions for Installing R Packages on a Linux Cluster
 STEP 1: Load the R module 
 Note: R may be capitalized or lowercase depending on your cluster’s naming convention.
-module load R    or    module load r
+module load R or module load r
 
 STEP 2: Start a new R session
-R 
+R
+
 STEP 3: Install “batch” package
 install.packages(“batch”) 
 Note: If there is a warning similar to 
 Warning in install.packages("batch") :
-'lib = "/nas/longleaf/apps/r/3.3.1/lib64/R/library"' is not writable
+'lib = "/nas/longleaf/apps/r/3.3.1/lib64/R/library"' is not writable then follow the prompts to use a personal library instead, and select the applicable CRAN mirror (select the mirror nearest to your current location).
 
-then follow the prompts to use a personal library instead, and select the applicable CRAN mirror (select the mirror nearest to your current location).
 STEP 4: Load and attached the “batch” package
 library(batch)
 
