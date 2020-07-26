@@ -10,7 +10,7 @@ in an appended CSV file.
 
 #Code Files
 1. Complete_Case_Analysis_GitHub.R:   Code for the complete-case transportability analysis
-2. bootMI_4cluster.R :                MI + Bootstrap Analysis (this file is run using )
+2. bootMI_4cluster.R :                MI + bootstrap analysis to be run on Linux R (computationally intensive)
 3. generate_CIs.R :                   Reads in results from bootMI_4cluster.R and outputs bootstrap 95% CI and plots of the sampling distributions 
 4. KM_Plot_GitHub.R:                  Creates Kaplan-Meier plot
 
