@@ -1,6 +1,6 @@
 # efv-transportability
 
-#Transportability analysis with multiple imputation and percentile-based bootstrap 95% CI:
+# Transportability analysis with multiple imputation and percentile-based bootstrap 95% CI:
 
 Each run of the R script bootMI_4cluster creates B=5 bootstrap iterations. 
 The shell script (jobarrays.sh) contains a command to run a Slurm job array of 20 jobs (SBATCH --array=1-20), 
@@ -8,21 +8,21 @@ with each run of the shell script producing 100 (=5*20) bootstraps. The shell sc
 repeatedly in the console (100 times with 2 second delays in between) to produce 10,000 bootstrap resamples 
 in an appended CSV file.
 
-#Code Files
+# Code Files
 1. Complete_Case_Analysis_GitHub.R:   Code for the complete-case transportability analysis
 2. bootMI_4cluster.R :                MI + bootstrap analysis to be run on Linux R (computationally intensive)
 3. generate_CIs_v2.R :                Reads in results from bootMI_4cluster.R and outputs bootstrap 95% CI and plots of the sampling distributions 
 4. KM_Plot_GitHub_v2TechEdits.R:      Creates inverse odds weighted Kaplan-Meier plot from multiply imputed data
 
-#R Functions
+# R Functions
 
 rqspline.R:                           Restricted quadratic spline function
 
-#Retired Code (no longer needed)
+# Retired Code (no longer needed)
   generate_CIs.R
   KM_Plot_GitHub.R
 
-#Instructions for Installing R Packages on a Linux Cluster
+# Instructions for Installing R Packages on a Linux Cluster
 
 STEP 1: Load the R module 
 Note: R may be capitalized or lowercase depending on your cluster’s naming convention.
